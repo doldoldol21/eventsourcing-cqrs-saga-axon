@@ -1,0 +1,6 @@
+rootProject.name = 'saga-example'
+include 'common-service'
+include 'order-service'
+include 'payment-service'
+include 'shipment-service'
+include 'user-service'
