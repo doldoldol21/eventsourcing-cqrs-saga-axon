@@ -11,6 +11,7 @@ public class UserProjection {
 
   @QueryHandler
   public User getUserPaymentDetails(GetUserPaymentDetailsQuery query) {
+    System.out.println("aymentDetails !!!");
     // DB에서 요청 해야함 (query.getUserId())
     // Ideally Get the details from the DB
     CardDetails cardDetails = CardDetails

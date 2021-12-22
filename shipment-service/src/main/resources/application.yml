@@ -2,14 +2,24 @@ server:
   port: 9094
 
 spring:
+  h2:
+    console:
+      enabled: true
+  profiles:
+    active:
+      - localhost
   datasource:
-    url: jdbc:postgresql://localhost:5432/shipmentDB
-    username: postgres
-    password: dream1234
-    driverClassName: org.postgresql.Driver
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:shipmentDB;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
   jpa:
     hibernate:
       ddl-auto: update
+    open-in-view: false
   sql:
     init:
       platform: postgresql
+axon:
+  serializer:
+    general: xstream

@@ -22,6 +22,7 @@ public class OrderCommandController {
     CreateOrderCommand createOrderCommand = CreateOrderCommand
       .builder()
       .orderId(UUID.randomUUID().toString())
+      .userId(orderRestModel.getUserId())
       .productId(orderRestModel.getProductId())
       .addressId(orderRestModel.getAddressId())
       .quantity(orderRestModel.getQuantity())
