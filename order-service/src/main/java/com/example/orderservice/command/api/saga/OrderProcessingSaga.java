@@ -83,9 +83,11 @@ public class OrderProcessingSaga {
       event.getOrderId()
     );
     try {
-      if (true) {
-        throw new Exception();
-      }
+      // 취소 테스트
+      // if (true) {
+      //   throw new Exception();
+      // }
+
       ShipOrderCommand shipOrderCommand = ShipOrderCommand
         .builder()
         .shipmentId(UUID.randomUUID().toString())

@@ -4,7 +4,7 @@ Content-Type: application/json
 
 {
     "productId": "54a2934d-1d7f-4d53-940b-6e76c939043a",
-    "quantity": 1,
+    "quantity": 3,
     "addressId": "vfbb5881-a872-4d13-993c-faeb8350eea5",
     "userId": "008"
 }
